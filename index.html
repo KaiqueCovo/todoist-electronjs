@@ -9,7 +9,6 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./icons.css" />
     <title>Todo ist</title>
   </head>
   <body>
@@ -22,17 +21,21 @@
     <div class="conteudo-atividade">
       <h2>O que vou fazer hoje?</h2>
       <input type="text" placeholder="Escreva sua atividade" />
-      <button>
+
+      <!-- Botão de adicionar item -->
+      <button onclick="adicionarItem()">
         <i class="fa-solid fa-folder-plus"></i>
         Adicionar
       </button>
     </div>
 
     <!-- Lista de todos -->
-    <ul>
-      <li>Minha primeira tarefa</li>
-      <li>Minha segunda tarefa</li>
-      <li>Minha terceira tarefa</li>
+    <ul id="lista-de-tarefas">
+      <li>MEU PRIMEIRO FILHO</li>
+      <li>MEU SEGUNDO FILHO</li>
     </ul>
+
+    <!-- Importando Script responsável pela lógica do todo -->
+    <script src="./todo-list.js"></script>
   </body>
 </html>
