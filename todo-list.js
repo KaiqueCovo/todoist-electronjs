@@ -1,5 +1,6 @@
 function adicionarItem() {
-  const valorInput = "Minha primeira tarefa";
+  // Pegando o valor do input
+  const valorInput = document.querySelector("input").value;
 
   // Pegando a tag UL do nosso HTML pelo ID
   const minhaTagUL = document.getElementById("lista-de-tarefas");
