@@ -1,3 +1,15 @@
+// Função responsável por adicionar item pelo evento de onkeypress no input
+function adicionarItemPelaTecla(event) {
+  // Pegando o tipo da tecla pelo evento
+  const tecla = event.key;
+
+  // Verificando se a tecla pressionada é o Enter
+  if (tecla === "Enter") {
+    // Chamando a função responsável por adicionar item
+    adicionarItem();
+  }
+}
+
 function adicionarItem() {
   // Pegando o valor do input
   const valorInput = document.querySelector("input").value;

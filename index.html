@@ -20,11 +20,20 @@
     <!-- Div com conteúdo de cadastrar atividade -->
     <div class="conteudo-atividade">
       <h2>O que vou fazer hoje?</h2>
-      <input type="text" placeholder="Escreva sua atividade" />
+      <input
+        onkeypress="adicionarItemPelaTecla(event)"
+        type="text"
+        placeholder="Escreva sua atividade"
+      />
+      <input
+        onkeypress="adicionarItemPelaTecla(event)"
+        type="text"
+        placeholder="Escreva sua atividade"
+      />
 
       <!-- Botão de adicionar item -->
       <button onclick="adicionarItem()">
-        <i class="fa-solid fa-folder-plus"></i>
+        <i class="fa-solid fa-plus"></i>
         Adicionar
       </button>
     </div>
