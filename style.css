@@ -59,3 +59,8 @@ ul {
   margin-top: 20px;
   color: #6f4bd8;
 }
+
+b {
+  color: red;
+  cursor: pointer;
+}
