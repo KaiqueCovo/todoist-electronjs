@@ -21,7 +21,8 @@ function adicionarItem() {
   const criarTagLI = document.createElement("li");
 
   // Criando uma tag em negrito
-  const tagRemover = "<b onclick='removerItem(event)'> Remover </b>";
+  const tagRemover =
+    "<i onclick='removerItem(event)' class='fa-solid fa-circle-minus'></i>";
 
   // Adicionando um texto para nossa tag li criada
   criarTagLI.innerHTML = valorInput + tagRemover;
@@ -33,16 +34,12 @@ function adicionarItem() {
 }
 
 function removerItem(event) {
-  // Pegando tag <b> dentro do nosso evento
-  const tagRemover = event.target;
+  // Pegando tag <i> dentro do nosso event
+  const meuIcone = event.target;
 
-  const tagLi = tagRemover.parentNode;
+  // Pegando a tag <li> através da minha tag <i> com propriedade parentElement
+  const minhaLi = meuIcone.parentElement;
 
-  console.log("CLIKEI NA FUNÇÃO REMOVER");
-
-  //tagLi.parentNode.removeChild(node);
-
-  tagLi.remove();
-
-  console.log(tagLi);
+  // Excluindo a tag <li> com a função remove()
+  minhaLi.remove();
 }
