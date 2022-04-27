@@ -1,10 +1,10 @@
 const { app, BrowserWindow } = require("electron");
 
-const path = require("path");
+// const path = require("path");
 
-require("electron-reload")(__dirname, {
-  electron: path.join(__dirname, "node_modules", ".bin", "electron"),
-});
+// require("electron-reload")(__dirname, {
+//   electron: path.join(__dirname, "node_modules", ".bin", "electron"),
+// });
 
 function criarJanela() {
   const janela = new BrowserWindow({
