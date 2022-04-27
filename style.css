@@ -65,3 +65,12 @@ ul {
   margin-left: 10px;
   cursor: pointer;
 }
+
+.concluida {
+  color: green;
+  text-decoration: line-through;
+}
+
+li {
+  cursor: pointer;
+}
