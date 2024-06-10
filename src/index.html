@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="./style.css" />
-    <title>Todo ist</title>
-  </head>
-  <body>
-    <!-- Título da aplicação -->
-    <h1>Aplicativo para criação das atividades diárias</h1>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- Traço de divisão -->
-    <hr />
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+  <title>Todo ist</title>
+</head>
 
-    <!-- Div com conteúdo de cadastrar atividade -->
-    <div class="conteudo-atividade">
-      <h2>O que vou fazer hoje?</h2>
-      <input
-        onkeypress="adicionarItemPelaTecla(event)"
-        type="text"
-        placeholder="Escreva sua atividade"
-      />
+<body>
+  <img src="../assets/icone.png" />
 
-      <!-- Botão de adicionar item -->
-      <button onclick="adicionarItem()">
-        <i class="fa-solid fa-plus"></i>
-        Adicionar
-      </button>
-    </div>
+  <!-- Título da aplicação -->
+  <h1>Aplicativo para criação das atividades diárias</h1>
 
-    <!-- Lista de todos -->
-    <ul id="lista-de-tarefas"></ul>
+  <!-- Traço de divisão -->
+  <hr />
 
-    <!-- Importando Script responsável pela lógica do todo -->
-    <script src="./todo-list.js"></script>
-  </body>
+  <!-- Div com conteúdo de cadastrar atividade -->
+  <div class="conteudo-atividade">
+    <h2>O que vou fazer hoje?</h2>
+    <input id="input-tarefa" onkeypress="adicionarItemPelaTecla(event)" type="text"
+      placeholder="Escreva sua atividade" disabled />
+
+    <!-- Botão de adicionar item -->
+    <button onclick="adicionarItem()" disabled>
+      <i class="fa-solid fa-plus"></i>
+      Adicionar
+    </button>
+  </div>
+
+  <!-- Lista de todos -->
+  <ul id="lista-de-tarefas"></ul>
+
+  <!-- Importando Script responsável pela lógica do todo -->
+</body>
+
 </html>
