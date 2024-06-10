@@ -2,7 +2,7 @@
   "name": "todoist-electronjs",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
